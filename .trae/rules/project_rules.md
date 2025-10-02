@@ -1,0 +1,3 @@
+- use shadcn/ui
+- use tailwindcss
+- use next js 15.5.4 App Router
