@@ -50,7 +50,7 @@ const Navigation = () => {
               <img
                 src="/logo.png"
                 alt="POI Logo"
-                className="w-24 h-24 object-cover"
+                className="w-50"
               />
             </Link>
           </div>

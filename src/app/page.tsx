@@ -15,9 +15,6 @@ export default function Home() {
                 <span className="block bg-gradient-to-r from-white to-emerald-200 bg-clip-text text-transparent">
                   Promotor Olahraga Indonesia
                 </span>
-                <span className="block text-3xl md:text-4xl font-semibold text-emerald-200 mt-4">
-                  (POI)
-                </span>
               </h1>
             </div>
 
@@ -70,9 +67,9 @@ export default function Home() {
               <div className="w-16 h-16 bg-emerald-100 flex items-center justify-center mb-6">
                 <div className="w-8 h-8 bg-emerald-600"></div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Kompetisi Nasional</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Ekosistem Kompetisi</h3>
               <p className="text-gray-600 leading-relaxed">
-                Liga berjenjang dari komunitas lokal hingga tingkat nasional dengan sistem yang terstruktur dan profesional.
+                Liga berjenjang dari komunitas lokal hingga nasional dengan sistem yang terstruktur dan profesional. Ekosistem kami tersebar di berbagai kota di Indonesia, menciptakan jalur karier bagi pelatih, wasit, dan komunitas untuk terus berkembang.
               </p>
             </div>
 
@@ -92,9 +89,9 @@ export default function Home() {
               <div className="w-16 h-16 bg-emerald-100 flex items-center justify-center mb-6">
                 <div className="w-8 h-8 bg-emerald-600"></div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Sertifikasi Resmi</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">More Than a Game</h3>
               <p className="text-gray-600 leading-relaxed">
-                Program lisensi dan sertifikasi untuk pelatih, wasit, manajer tim, dan pembinaan akademi standar nasional.
+                Kami melakukan kegiatan sosial untuk keberlangsungan ekosistem olahraga komunitas. Kami aktif dalam program pengembangan infrastruktur, donasi perlengkapan, dan edukasi bagi komunitas olahraga di seluruh Indonesia.
               </p>
             </div>
           </div>

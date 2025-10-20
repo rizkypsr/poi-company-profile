@@ -150,7 +150,7 @@ export default function Bantuan() {
                 Chat WhatsApp
               </a>
               <a
-                href="mailto:support@inaspro.id"
+                href="mailto:partnership@inasport.id"
                 className="btn-secondary inline-flex items-center text-lg group"
               >
                 <Mail className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />

@@ -166,7 +166,7 @@ export default function Karir() {
             {/* CTA Button */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="mailto:karir@inaspro.id"
+                href="mailto:partnership@inasport.id"
                 className="btn-primary inline-flex items-center text-lg group"
               >
                 <Send className="mr-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />

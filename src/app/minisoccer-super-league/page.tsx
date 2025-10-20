@@ -12,7 +12,7 @@ export default function MinisoccerSuperLeague() {
     {
       icon: Globe,
       title: 'Event Internasional',
-      description: 'Fournation Cup, Corporate World Cup, IMF World Cup - kompetisi bergengsi tingkat internasional.',
+      description: 'Fournation Cup, Corporate World Cup - kompetisi bergengsi tingkat internasional.',
       color: 'from-blue-500 to-indigo-600'
     },
     {
@@ -24,7 +24,7 @@ export default function MinisoccerSuperLeague() {
     {
       icon: Users,
       title: 'Garuda MSL',
-      description: 'Timnas resmi hasil seleksi liga & akademi terbaik dari seluruh Indonesia.',
+      description: 'Timnas hasil seleksi liga & akademi terbaik dari seluruh Indonesia.',
       color: 'from-emerald-500 to-teal-600'
     }
   ]
@@ -84,7 +84,7 @@ export default function MinisoccerSuperLeague() {
             {/* CTA Button */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://msl.inaspro.id"
+                href="https://minisoccersuperleague.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary inline-flex items-center text-lg group"
@@ -183,7 +183,7 @@ export default function MinisoccerSuperLeague() {
                 className="bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold py-3 px-8 transition-all duration-300 hover:bg-white/20 hover:border-white/30 inline-flex items-center"
               >
                 <Play className="mr-2 w-5 h-5" />
-                Tonton MSL TV
+                Apps
               </a>
               <a
                 href="https://youtube.com/@mslofficial"
@@ -210,18 +210,14 @@ export default function MinisoccerSuperLeague() {
               Tim Nasional Minisoccer Indonesia yang terbentuk dari hasil seleksi terbaik
               dari liga dan akademi MSL di seluruh Indonesia. Mewakili Indonesia di kompetisi internasional.
             </p>
-            <div className="grid md:grid-cols-3 gap-6 mt-12">
+            <div className="grid md:grid-cols-2 gap-6 mt-12">
               <div className="bg-white/10 backdrop-blur-sm p-6">
                 <h3 className="text-2xl font-bold mb-2">50+</h3>
                 <p className="text-white/80">Pemain Terpilih</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm p-6">
-                <h3 className="text-2xl font-bold mb-2">15+</h3>
+                <h3 className="text-2xl font-bold mb-2">10+</h3>
                 <p className="text-white/80">Kompetisi Internasional</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm p-6">
-                <h3 className="text-2xl font-bold mb-2">8</h3>
-                <p className="text-white/80">Medali Emas</p>
               </div>
             </div>
           </div>

@@ -27,25 +27,25 @@ export default function Perusahaan() {
 
   const teamMembers = [
     {
-      name: 'CEO & Founder',
+      name: 'Komisaris',
       role: 'Visioner Ekosistem Olahraga',
       description: 'Pengalaman 10+ tahun di industri olahraga dan teknologi',
       expertise: ['Strategic Planning', 'Sports Business', 'Digital Innovation']
     },
     {
-      name: 'CTO',
+      name: 'CEO',
       role: 'Technology Leader',
       description: 'Expert dalam pengembangan platform digital dan AI',
       expertise: ['Platform Development', 'AI/ML', 'System Architecture']
     },
     {
-      name: 'Head of Operations',
+      name: 'GM',
       role: 'Event & Competition Manager',
       description: 'Spesialis manajemen event dan kompetisi olahraga',
       expertise: ['Event Management', 'Competition Systems', 'Venue Operations']
     },
     {
-      name: 'Head of Business Development',
+      name: 'Head Head',
       role: 'Partnership & Growth',
       description: 'Expert dalam pengembangan bisnis dan kemitraan strategis',
       expertise: ['Business Strategy', 'Partnership', 'Market Expansion']
@@ -56,7 +56,7 @@ export default function Perusahaan() {
     {
       year: '2025',
       title: 'Ekspansi Nasional',
-      description: 'Ekspansi ke 20 kota besar Indonesia dan penyelenggaraan World Cup Surakarta 2025',
+      description: 'Ekspansi ke 30 Kota Takeout WC',
       goals: [
         'Ekspansi ke 20 kota di Indonesia',
         'World Cup Surakarta 2025',
@@ -67,7 +67,7 @@ export default function Perusahaan() {
     },
     {
       year: '2026',
-      title: 'Ekspansi Regional',
+      title: 'Ekspansi Internasional',
       description: 'Perluasan ke negara-negara ASEAN dan persiapan IPO untuk pendanaan lebih lanjut',
       goals: [
         'Ekspansi ke 5 negara ASEAN',

@@ -14,13 +14,13 @@ export default function PilarBisnis() {
         'Kompetisi komunitas lokal dan nasional',
         'Turnamen korporasi dan perusahaan',
         'Liga sekolah dan akademi',
-        'Event internasional (World Cup, Asian Cup)',
+        'Event internasional',
         'Kompetisi kelompok umur (U-12, U-15, U-18, Senior)'
       ],
       stats: [
-        { label: 'Event per Tahun', value: '500+' },
-        { label: 'Peserta', value: '50,000+' },
-        { label: 'Kota', value: '25+' }
+        { label: 'Event per Tahun', value: '400+' },
+        { label: 'Peserta', value: '100,000+' },
+        { label: 'Kota', value: '30+' }
       ]
     },
     {
@@ -59,7 +59,7 @@ export default function PilarBisnis() {
       ],
       stats: [
         { label: 'Venue Partner', value: '150+' },
-        { label: 'Lapangan', value: '500+' },
+        { label: 'Lapangan', value: '10+' },
         { label: 'Booking/Bulan', value: '15,000+' }
       ]
     },
@@ -88,6 +88,26 @@ export default function PilarBisnis() {
       title: 'Sertifikasi & Edukasi',
       subtitle: 'Pengembangan SDM Olahraga',
       description: 'Lisensi pelatih, wasit, manajer tim, dan pembinaan akademi standar nasional untuk meningkatkan kualitas SDM olahraga.',
+      icon: GraduationCap,
+      color: 'from-yellow-500 to-orange-600',
+      features: [
+        'Sertifikasi pelatih berlisensi nasional',
+        'Pelatihan wasit dan official',
+        'Program manajer tim profesional',
+        'Kurikulum akademi standar nasional',
+        'Workshop dan seminar berkala'
+      ],
+      stats: [
+        { label: 'Pelatih Tersertifikasi', value: '2,500+' },
+        { label: 'Wasit Berlisensi', value: '1,200+' },
+        { label: 'Program Edukasi', value: '100+' }
+      ]
+    },
+    {
+      id: 6,
+      title: 'Sportpreneur Capital Fund',
+      subtitle: 'Menciptakan Peluang, Membangun Juara',
+      description: 'Wadah yang berfokus pada ekosistem olahraga di Indonesia. Kami bermitra dengan para sportpreneur—individu atau perusahaan inovatif—untuk mendorong pertumbuhan industri olahraga.',
       icon: GraduationCap,
       color: 'from-yellow-500 to-orange-600',
       features: [
@@ -178,7 +198,7 @@ export default function PilarBisnis() {
       {/* Detailed Pillars */}
       {pillars.map((pillar, index) => {
         const isEven = index % 2 === 0
-        
+
         return (
           <section key={pillar.id} className={`py-20 ${isEven ? 'bg-white' : 'bg-gray-50'}`}>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -193,7 +213,7 @@ export default function PilarBisnis() {
                     <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                       {pillar.description}
                     </p>
-                    
+
                     <div className="space-y-3 mb-8">
                       {pillar.features.map((feature, idx) => (
                         <div key={idx} className="flex items-start">
@@ -233,23 +253,23 @@ export default function PilarBisnis() {
               Integrasi Ekosistem
             </h2>
             <p className="text-xl text-white/90 mb-12 leading-relaxed">
-              Kelima pilar bisnis ini tidak berdiri sendiri, melainkan saling terintegrasi untuk menciptakan 
-              ekosistem olahraga yang holistik dan berkelanjutan. Dari event hingga edukasi, 
+              Kelima pilar bisnis ini tidak berdiri sendiri, melainkan saling terintegrasi untuk menciptakan
+              ekosistem olahraga yang holistik dan berkelanjutan. Dari event hingga edukasi,
               semua terhubung dalam satu platform digital yang komprehensif.
             </p>
-            
+
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="bg-white/10 backdrop-blur-sm p-6">
-              <Trophy className="w-12 h-12 text-white mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Kompetisi Terintegrasi</h3>
-              <p className="text-white/80 text-sm">Event, venue, dan platform digital bekerja bersama</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-6">
-              <Users className="w-12 h-12 text-white mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Komunitas Terhubung</h3>
-              <p className="text-white/80 text-sm">Semua stakeholder dalam satu ekosistem</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-6">
+                <Trophy className="w-12 h-12 text-white mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">Kompetisi Terintegrasi</h3>
+                <p className="text-white/80 text-sm">Event, venue, dan platform digital bekerja bersama</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm p-6">
+                <Users className="w-12 h-12 text-white mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">Komunitas Terhubung</h3>
+                <p className="text-white/80 text-sm">Semua stakeholder dalam satu ekosistem</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm p-6">
                 <Award className="w-12 h-12 text-white mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-2">Kualitas Terjamin</h3>
                 <p className="text-white/80 text-sm">Sertifikasi dan edukasi berkelanjutan</p>
