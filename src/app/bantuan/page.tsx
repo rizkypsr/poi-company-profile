@@ -141,7 +141,7 @@ export default function Bantuan() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://wa.me/6281234567890"
+                href="https://api.whatsapp.com/send/?phone=6285880322711&text=Hai+MSL%21&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary inline-flex items-center text-lg group"
@@ -350,7 +350,7 @@ export default function Bantuan() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://wa.me/6281234567890"
+                href="https://api.whatsapp.com/send/?phone=6285880322711&text=Hai+MSL%21&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary inline-flex items-center text-lg"
@@ -359,7 +359,7 @@ export default function Bantuan() {
                 Chat WhatsApp
               </a>
               <a
-                href="mailto:support@inaspro.id"
+                href="mailto:partnership@inasprot.id"
                 className="px-8 py-3 border border-gray-300 text-gray-700 font-semibold hover:bg-gray-100 transition-colors inline-flex items-center"
               >
                 <Mail className="mr-2 w-4 h-4" />

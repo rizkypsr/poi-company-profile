@@ -186,12 +186,12 @@ export default function MinisoccerSuperLeague() {
                 Apps
               </a>
               <a
-                href="https://youtube.com/@mslofficial"
+                href="https://www.youtube.com/@minisoccersuperleague"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold py-3 px-8 transition-all duration-300 hover:bg-white/20 hover:border-white/30"
               >
-                YouTube Channel
+                YouTube
               </a>
             </div>
           </div>

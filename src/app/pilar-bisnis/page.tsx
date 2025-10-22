@@ -78,7 +78,7 @@ export default function PilarBisnis() {
         'Strategi digital marketing dan media sosial'
       ],
       stats: [
-        { label: 'Talenta Dikelola', value: '1,000+' },
+        { label: 'Talenta Dikelola', value: '30+' },
         { label: 'Klub Partner', value: '200+' },
         { label: 'Konten Diproduksi', value: '5,000+' }
       ]
@@ -98,8 +98,8 @@ export default function PilarBisnis() {
         'Workshop dan seminar berkala'
       ],
       stats: [
-        { label: 'Pelatih Tersertifikasi', value: '2,500+' },
-        { label: 'Wasit Berlisensi', value: '1,200+' },
+        { label: 'Pelatih Tersertifikasi', value: '100+' },
+        { label: 'Wasit Berlisensi', value: '100+' },
         { label: 'Program Edukasi', value: '100+' }
       ]
     },

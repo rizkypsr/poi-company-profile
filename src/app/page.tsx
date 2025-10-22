@@ -13,7 +13,7 @@ export default function Home() {
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 <span className="block text-white/90">Selamat datang di</span>
                 <span className="block bg-gradient-to-r from-white to-emerald-200 bg-clip-text text-transparent">
-                  Promotor Olahraga Indonesia
+                  Era Baru Olahraga Komunitas
                 </span>
               </h1>
             </div>
