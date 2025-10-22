@@ -58,8 +58,7 @@ export default function Perusahaan() {
       title: 'Ekspansi Nasional',
       description: 'Ekspansi ke 30 Kota Takeout WC',
       goals: [
-        'Ekspansi ke 20 kota di Indonesia',
-        'World Cup Surakarta 2025',
+        'Ekspansi ke 30 kota di Indonesia',
         '100,000+ pengguna aktif INASPRO+',
         '1,000+ venue partner'
       ],
