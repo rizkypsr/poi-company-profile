@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ChevronDown, ChevronUp, Mail, Phone, MessageCircle, HelpCircle, FileText, Shield, Users, Settings } from 'lucide-react'
+import { ChevronDown, ChevronUp, Mail, FileText, Shield, Users, Settings } from 'lucide-react'
 
 export default function SupportPageEN() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
@@ -54,12 +54,20 @@ export default function SupportPageEN() {
       icon: FileText,
       questions: [
         {
+          q: 'How do I make a payment?',
+          a: 'Payment is made through manual transfer. After transfer, contact WhatsApp admin at +62 812-3456-7890 for confirmation by including transfer proof and complete order information.'
+        },
+        {
           q: 'What payment methods are available?',
-          a: 'We accept bank transfers, e-wallets (GoPay, OVO, DANA), credit/debit cards, and on-site payment for certain events.'
+          a: 'Currently we accept payment through manual bank transfer. After transfer, confirmation via WhatsApp admin is required for payment verification.'
         },
         {
           q: 'How do I get an invoice?',
-          a: 'Invoices are automatically sent to your email after successful payment. You can also download them from your account dashboard.'
+          a: 'Invoices are automatically sent to your email after payment is successfully confirmed by admin. You can also download them from your account dashboard.'
+        },
+        {
+          q: 'How long does payment confirmation take?',
+          a: 'Payment confirmation process takes maximum 24 hours after you send transfer proof and order information to our WhatsApp admin.'
         },
         {
           q: 'Is there a refund policy?',
@@ -120,7 +128,7 @@ export default function SupportPageEN() {
                 Find answers to your questions or contact our support team
               </p>
               <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-3xl mx-auto">
-                We're here to help you 24/7 for the best experience in the POI ecosystem
+                We&apos;re here to help you 24/7 for the best experience in the POI ecosystem
               </p>
             </div>
           </div>
@@ -136,12 +144,12 @@ export default function SupportPageEN() {
                 Contact Us
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Choose the most convenient way to contact our support team
+                Send us an email to get help from our support team
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <div className="bg-white p-8 grain-texture border border-gray-200 text-center">
+            <div className="flex justify-center mb-16">
+              <div className="bg-white p-8 grain-texture border border-gray-200 text-center max-w-md">
                 <div className="w-16 h-16 bg-emerald-100 flex items-center justify-center mx-auto mb-6">
                   <Mail className="w-8 h-8 text-emerald-600" />
                 </div>
@@ -150,28 +158,6 @@ export default function SupportPageEN() {
                 <a href="mailto:support@poi.id" className="text-emerald-600 font-semibold hover:text-emerald-700">
                   support@poi.id
                 </a>
-              </div>
-
-              <div className="bg-white p-8 grain-texture border border-gray-200 text-center">
-                <div className="w-16 h-16 bg-emerald-100 flex items-center justify-center mx-auto mb-6">
-                  <Phone className="w-8 h-8 text-emerald-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Phone</h3>
-                <p className="text-gray-600 mb-4">Call directly for quick assistance</p>
-                <a href="tel:+6221-1234-5678" className="text-emerald-600 font-semibold hover:text-emerald-700">
-                  +62 21-1234-5678
-                </a>
-              </div>
-
-              <div className="bg-white p-8 grain-texture border border-gray-200 text-center">
-                <div className="w-16 h-16 bg-emerald-100 flex items-center justify-center mx-auto mb-6">
-                  <MessageCircle className="w-8 h-8 text-emerald-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Live Chat</h3>
-                <p className="text-gray-600 mb-4">Real-time chat with our agents</p>
-                <button className="text-emerald-600 font-semibold hover:text-emerald-700">
-                  Start Chat
-                </button>
               </div>
             </div>
           </div>
@@ -331,56 +317,6 @@ export default function SupportPageEN() {
         </div>
       </section>
 
-      {/* Additional Resources */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Additional Resources
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Explore guides and documentation to maximize your experience
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white p-8 grain-texture border border-gray-200 text-center">
-                <div className="w-16 h-16 bg-emerald-100 flex items-center justify-center mx-auto mb-6">
-                  <FileText className="w-8 h-8 text-emerald-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">User Guide</h3>
-                <p className="text-gray-600 mb-6">Learn how to use all POI platform features</p>
-                <a href="#" className="text-emerald-600 font-semibold hover:text-emerald-700">
-                  Read Guide →
-                </a>
-              </div>
-
-              <div className="bg-white p-8 grain-texture border border-gray-200 text-center">
-                <div className="w-16 h-16 bg-emerald-100 flex items-center justify-center mx-auto mb-6">
-                  <HelpCircle className="w-8 h-8 text-emerald-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Video Tutorials</h3>
-                <p className="text-gray-600 mb-6">Watch step-by-step video tutorials</p>
-                <a href="#" className="text-emerald-600 font-semibold hover:text-emerald-700">
-                  Watch Videos →
-                </a>
-              </div>
-
-              <div className="bg-white p-8 grain-texture border border-gray-200 text-center">
-                <div className="w-16 h-16 bg-emerald-100 flex items-center justify-center mx-auto mb-6">
-                  <Users className="w-8 h-8 text-emerald-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Community</h3>
-                <p className="text-gray-600 mb-6">Join the POI user community</p>
-                <a href="#" className="text-emerald-600 font-semibold hover:text-emerald-700">
-                  Join Community →
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

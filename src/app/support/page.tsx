@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { ChevronDown, ChevronUp, Mail, Phone, MessageCircle, HelpCircle, FileText, Shield, Users, Settings } from 'lucide-react'
+import { ChevronDown, ChevronUp, Mail, FileText, Shield, Users, Settings } from 'lucide-react'
 
 export default function SupportPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
@@ -54,12 +54,20 @@ export default function SupportPage() {
       icon: FileText,
       questions: [
         {
+          q: 'Bagaimana cara melakukan pembayaran?',
+          a: 'Pembayaran dilakukan melalui transfer manual. Setelah transfer, hubungi admin WhatsApp di +62 812-3456-7890 untuk konfirmasi dengan menyertakan bukti transfer dan informasi pesanan lengkap.'
+        },
+        {
           q: 'Metode pembayaran apa saja yang tersedia?',
-          a: 'Kami menerima transfer bank, e-wallet (GoPay, OVO, DANA), kartu kredit/debit, dan pembayaran di tempat untuk event tertentu.'
+          a: 'Saat ini kami menerima pembayaran melalui transfer bank manual. Setelah transfer, wajib konfirmasi melalui WhatsApp admin untuk verifikasi pembayaran.'
         },
         {
           q: 'Bagaimana cara mendapatkan invoice?',
-          a: 'Invoice otomatis dikirim ke email setelah pembayaran berhasil. Anda juga bisa mengunduhnya dari dashboard akun Anda.'
+          a: 'Invoice otomatis dikirim ke email setelah pembayaran berhasil dikonfirmasi oleh admin. Anda juga bisa mengunduhnya dari dashboard akun Anda.'
+        },
+        {
+          q: 'Berapa lama proses konfirmasi pembayaran?',
+          a: 'Proses konfirmasi pembayaran maksimal 1x24 jam setelah Anda mengirim bukti transfer dan informasi pesanan ke admin WhatsApp kami.'
         },
         {
           q: 'Apakah ada kebijakan refund?',
@@ -136,12 +144,12 @@ export default function SupportPage() {
                 Hubungi Kami
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Pilih cara yang paling nyaman untuk menghubungi tim support kami
+                Kirim email untuk mendapatkan bantuan dari tim support kami
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <div className="bg-white p-8 grain-texture border border-gray-200 text-center">
+            <div className="flex justify-center mb-16">
+              <div className="bg-white p-8 grain-texture border border-gray-200 text-center max-w-md">
                 <div className="w-16 h-16 bg-emerald-100 flex items-center justify-center mx-auto mb-6">
                   <Mail className="w-8 h-8 text-emerald-600" />
                 </div>
@@ -150,28 +158,6 @@ export default function SupportPage() {
                 <a href="mailto:support@poi.id" className="text-emerald-600 font-semibold hover:text-emerald-700">
                   support@poi.id
                 </a>
-              </div>
-
-              <div className="bg-white p-8 grain-texture border border-gray-200 text-center">
-                <div className="w-16 h-16 bg-emerald-100 flex items-center justify-center mx-auto mb-6">
-                  <Phone className="w-8 h-8 text-emerald-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Telepon</h3>
-                <p className="text-gray-600 mb-4">Hubungi langsung untuk bantuan cepat</p>
-                <a href="tel:+6221-1234-5678" className="text-emerald-600 font-semibold hover:text-emerald-700">
-                  +62 21-1234-5678
-                </a>
-              </div>
-
-              <div className="bg-white p-8 grain-texture border border-gray-200 text-center">
-                <div className="w-16 h-16 bg-emerald-100 flex items-center justify-center mx-auto mb-6">
-                  <MessageCircle className="w-8 h-8 text-emerald-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Live Chat</h3>
-                <p className="text-gray-600 mb-4">Chat real-time dengan agent kami</p>
-                <button className="text-emerald-600 font-semibold hover:text-emerald-700">
-                  Mulai Chat
-                </button>
               </div>
             </div>
           </div>
@@ -331,56 +317,6 @@ export default function SupportPage() {
         </div>
       </section>
 
-      {/* Additional Resources */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Sumber Daya Lainnya
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Jelajahi panduan dan dokumentasi untuk memaksimalkan pengalaman Anda
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white p-8 grain-texture border border-gray-200 text-center">
-                <div className="w-16 h-16 bg-emerald-100 flex items-center justify-center mx-auto mb-6">
-                  <FileText className="w-8 h-8 text-emerald-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Panduan Pengguna</h3>
-                <p className="text-gray-600 mb-6">Pelajari cara menggunakan semua fitur platform POI</p>
-                <a href="#" className="text-emerald-600 font-semibold hover:text-emerald-700">
-                  Baca Panduan →
-                </a>
-              </div>
-
-              <div className="bg-white p-8 grain-texture border border-gray-200 text-center">
-                <div className="w-16 h-16 bg-emerald-100 flex items-center justify-center mx-auto mb-6">
-                  <HelpCircle className="w-8 h-8 text-emerald-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Tutorial Video</h3>
-                <p className="text-gray-600 mb-6">Tonton video tutorial step-by-step</p>
-                <a href="#" className="text-emerald-600 font-semibold hover:text-emerald-700">
-                  Tonton Video →
-                </a>
-              </div>
-
-              <div className="bg-white p-8 grain-texture border border-gray-200 text-center">
-                <div className="w-16 h-16 bg-emerald-100 flex items-center justify-center mx-auto mb-6">
-                  <Users className="w-8 h-8 text-emerald-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Komunitas</h3>
-                <p className="text-gray-600 mb-6">Bergabung dengan komunitas pengguna POI</p>
-                <a href="#" className="text-emerald-600 font-semibold hover:text-emerald-700">
-                  Gabung Komunitas →
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

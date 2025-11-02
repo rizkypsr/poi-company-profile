@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Inaspro+</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #141414 100%);
+            color: #FEFEFE;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(21, 21, 20, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FF4076;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #FEFEFE;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #FF4076;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, rgba(255, 64, 118, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #FF4076, #FF6B9D);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #6A6A6C;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            color: #FEFEFE;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-icon {
+            width: 32px;
+            height: 32px;
+            background: #FF4076;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        /* Cards */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: rgba(21, 21, 20, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 64, 118, 0.3);
+            box-shadow: 0 20px 40px rgba(255, 64, 118, 0.1);
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #FF4076, #FF6B9D);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #FEFEFE;
+        }
+
+        .card p {
+            color: #6A6A6C;
+            margin-bottom: 1rem;
+        }
+
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .card li {
+            color: #6A6A6C;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .card li::before {
+            content: "•";
+            color: #FF4076;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: rgba(21, 21, 20, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #FEFEFE;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 16px;
+            background: #1E1F24;
+            border: 1px solid #4D4D4D;
+            border-radius: 8px;
+            color: #FEFEFE;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #FF4076;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #FF4076, #FF6B9D);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 64, 118, 0.3);
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: rgba(21, 21, 20, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(255, 64, 118, 0.1);
+        }
+
+        .faq-question h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #FEFEFE;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: #6A6A6C;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(21, 21, 20, 0.9);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .footer p {
+            color: #6A6A6C;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-text">Inaspro+</div>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#features">Fitur</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Pusat Bantuan Inaspro+</h1>
+            <p>Platform komunitas multi-sport yang menghubungkan orang-orang dengan minat dan passion yang sama. Temukan bantuan untuk semua fitur aplikasi Inaspro+.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- App Features Section -->
+            <section id="features" class="section">
+                <h2 class="section-title">
+                    <div class="section-icon">🏆</div>
+                    Fitur Aplikasi Inaspro+
+                </h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">⚽</div>
+                        <h3>Fantasy Football</h3>
+                        <p>Bergabung dengan turnamen fantasy football dan kompetisi seru.</p>
+                        <ul>
+                            <li>Pilih tim favorit Anda</li>
+                            <li>Daftar turnamen fantasy</li>
+                            <li>Kelola jersey dan sepatu tim</li>
+                            <li>Lihat riwayat registrasi</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🏟️</div>
+                        <h3>Liga & Kompetisi</h3>
+                        <p>Ikuti Liga 1, Liga 2, dan berbagai kompetisi sepak bola.</p>
+                        <ul>
+                            <li>Statistik liga terkini</li>
+                            <li>Jadwal pertandingan</li>
+                            <li>Klasemen dan hasil</li>
+                            <li>Analisis performa tim</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📺</div>
+                        <h3>TV Streaming</h3>
+                        <p>Tonton pertandingan langsung melalui fitur TV streaming.</p>
+                        <ul>
+                            <li>Live streaming pertandingan</li>
+                            <li>Kualitas video HD</li>
+                            <li>Jadwal siaran</li>
+                            <li>Replay pertandingan</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🛒</div>
+                        <h3>Marketplace</h3>
+                        <p>Belanja perlengkapan olahraga dan merchandise tim favorit.</p>
+                        <ul>
+                            <li>Jersey tim resmi</li>
+                            <li>Sepatu dan perlengkapan</li>
+                            <li>Merchandise eksklusif</li>
+                            <li>Pembayaran aman</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">👥</div>
+                        <h3>Komunitas</h3>
+                        <p>Bergabung dengan komunitas sepak bola dan temukan teman baru.</p>
+                        <ul>
+                            <li>Forum diskusi</li>
+                            <li>Event komunitas</li>
+                            <li>Grup berdasarkan minat</li>
+                            <li>Networking dengan sesama fans</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🏆</div>
+                        <h3>MSL Foundation & Regional</h3>
+                        <p>Program Dana Talang dan MSL Regional Series untuk pengembangan sepak bola.</p>
+                        <ul>
+                            <li>Dana Talang untuk booking lapangan</li>
+                            <li>MSL Regional Series di 20 kota</li>
+                            <li>Pengembangan talenta</li>
+                            <li>Dukungan teknis dan operasional</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="section">
+                <h2 class="section-title">
+                    <div class="section-icon">❓</div>
+                    Pertanyaan yang Sering Diajukan
+                </h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>Bagaimana cara mendaftar di Inaspro+?</h4>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Anda dapat mendaftar dengan menggunakan email atau akun Google. Buka aplikasi Inaspro+, pilih "Daftar", isi informasi yang diperlukan, dan verifikasi akun Anda melalui email.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>Bagaimana cara bergabung dengan Fantasy Football?</h4>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Masuk ke menu Fantasy, pilih turnamen yang tersedia, pilih tim favorit Anda, pilih jersey dan sepatu, lalu bayar biaya registrasi. Anda akan menerima konfirmasi setelah pembayaran berhasil.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>Apa itu Dana Talang?</h4>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Dana Talang adalah program pembiayaan untuk booking lapangan sepak bola. Anda dapat mengajukan dana untuk memesan lapangan tanpa perlu membayar uang muka, dengan proses yang cepat dan praktis melalui aplikasi.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>Bagaimana cara menonton TV streaming?</h4>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Buka menu TV di aplikasi, pilih pertandingan yang ingin ditonton, dan nikmati streaming langsung. Pastikan koneksi internet Anda stabil untuk pengalaman menonton yang optimal.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>Bagaimana cara berbelanja di Marketplace?</h4>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Masuk ke menu Marketplace, browse produk yang tersedia, pilih item yang diinginkan, tambahkan ke keranjang, dan lakukan checkout. Pembayaran dapat dilakukan melalui berbagai metode yang tersedia.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>Bagaimana cara bergabung dengan MSL Regional Series?</h4>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Buka menu More > MSL Regional Series, isi formulir pendaftaran dengan lengkap termasuk informasi lapangan dan kontak person. Tim MSL akan menghubungi Anda untuk konfirmasi.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <h2 class="section-title">
+                    <div class="section-icon">📞</div>
+                    Hubungi Kami
+                </h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">📧</div>
+                        <h3>Email Support</h3>
+                        <p>Kirim pertanyaan atau masalah Anda melalui email</p>
+                        <p><strong>support@inaspro.com</strong></p>
+                        <p>Respon dalam 24 jam</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">💬</div>
+                        <h3>WhatsApp</h3>
+                        <p>Chat langsung dengan tim customer service</p>
+                        <p><strong>+62 812-3456-7890</strong></p>
+                        <p>Senin - Jumat: 09:00 - 18:00 WIB</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📱</div>
+                        <h3>Media Sosial</h3>
+                        <p>Ikuti kami untuk update terbaru</p>
+                        <ul>
+                            <li>Instagram: @inaspro_official</li>
+                            <li>Twitter: @inaspro</li>
+                            <li>Facebook: Inaspro Indonesia</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 1.5rem; text-align: center;">Kirim Pesan</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Kategori</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Pilih kategori</option>
+                                <option value="fantasy">Fantasy Football</option>
+                                <option value="liga">Liga & Kompetisi</option>
+                                <option value="tv">TV Streaming</option>
+                                <option value="marketplace">Marketplace</option>
+                                <option value="community">Komunitas</option>
+                                <option value="msl">MSL Foundation/Regional</option>
+                                <option value="technical">Masalah Teknis</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Jelaskan masalah atau pertanyaan Anda..."></textarea>
+                        </div>
+                        <button type="submit" class="btn">
+                            <span>📤</span>
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Inaspro+. Semua hak cipta dilindungi. | Versi 2.3.1</p>
+            <p>Platform komunitas multi-sport untuk menghubungkan passion Anda</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+                item.querySelector('.faq-question span').textContent = '+';
+            });
+            
+            // Toggle current item
+            if (!isActive) {
+                faqItem.classList.add('active');
+                element.querySelector('span').textContent = '-';
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah dikirim. Tim support kami akan menghubungi Anda segera.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

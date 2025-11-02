@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Target, Heart, Users, Calendar, Trophy, Globe, Zap, Building } from 'lucide-react'
+import { Target, Users, Calendar, Trophy, Zap, Building } from 'lucide-react'
 
 export default function Perusahaan() {
   const missions = [

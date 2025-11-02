@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { ChevronDown } from 'lucide-react'
+import Image from 'next/image'
+
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -44,13 +46,13 @@ const Navigation = () => {
       }`}>
       <div className="relative px-4 sm:px-6 md:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* POI Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center space-x-4">
-              <img
+              <Image
                 src="/logo.png"
                 alt="POI Logo"
-                className="w-50"
+                width={170}
+                height={170}
               />
             </Link>
           </div>
@@ -76,7 +78,7 @@ const Navigation = () => {
                       <div className={`absolute top-full left-0 mt-2 w-64 bg-white/95 backdrop-blur-xl rounded-xl shadow-2xl border border-emerald-100/50 transition-all duration-300 ${activeDropdown === item.label ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
                         }`}>
                         <div className="p-2">
-                          {item.submenu.map((subItem, subIndex) => (
+                          {item.submenu.map((subItem) => (
                             <Link
                               key={subItem.href}
                               href={subItem.href}

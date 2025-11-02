@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Calendar, Smartphone, Building, Palette, GraduationCap, Trophy, Users, MapPin, Megaphone, Award } from 'lucide-react'
+import { Calendar, Smartphone, Building, Palette, GraduationCap, Trophy, Users, Award } from 'lucide-react'
 
 export default function PilarBisnis() {
   const pillars = [
@@ -181,7 +181,7 @@ export default function PilarBisnis() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-              {pillars.map((pillar, index) => {
+              {pillars.map((pillar) => {
                 return (
                   <div key={pillar.id} className="bg-white p-6 shadow-lg hover:shadow-xl transition-shadow grain-texture group cursor-pointer">
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{pillar.title}</h3>
