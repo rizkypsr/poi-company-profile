@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react'
 
 export default function Footer() {
@@ -104,6 +105,60 @@ export default function Footer() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Sponsor Logos Section */}
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+            <Image src="/sponsor/adira.png" alt="Adira" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/allplay.png" alt="Allplay" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/bi.jpg" alt="Bank Indonesia" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/Bolalob.webp" alt="Bolalob" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/bpjs.svg.png" alt="BPJS" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/brawijayahospital.png" alt="Brawijaya Hospital" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/cheers.jpeg" alt="Cheers" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/citilink.png" alt="Citilink" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/galerifutsal.png" alt="Galeri Futsal" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/garistemu_cover.jpeg" alt="Garis Temu" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/garudatv.png" alt="Garuda TV" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/gelora.jpeg" alt="Gelora" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/globalradio.svg.png" alt="Global Radio" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/hmns.png" alt="HMNS" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/indihome.webp" alt="IndiHome" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/inews.svg" alt="iNews" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/infipopblue.svg" alt="Infipop Blue" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/infomedia.png" alt="Infomedia" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/jbfc.jpeg" alt="JBFC" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/jetbretmedia.png" alt="Jetbret Media" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/jne.png" alt="JNE" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/madiriutama.png" alt="Madiri Utama" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/mandiri.png" alt="Bank Mandiri" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/max.jpg" alt="Max" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/mills.png" alt="Mills" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/mnc.png" alt="MNC" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/molten.jpeg" alt="Molten" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/mustang.png" alt="Mustang" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/mytelkomsel.png" alt="MyTelkomsel" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/nodge.png" alt="Nodge" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/noice.webp" alt="Noice" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/pala.jpeg" alt="Pala" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/pelindo.png" alt="Pelindo" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/pertamina.png" alt="Pertamina" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/pertamina_lubricants.png" alt="Pertamina Lubricants" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/physioprenenur.jpeg" alt="Physio Prenenur" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/pln.png" alt="PLN" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/pocari.png" alt="Pocari Sweat" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/pupuk.webp" alt="Pupuk Indonesia" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/republika.png" alt="Republika" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/salingjaga.png" alt="Saling Jaga" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/segotempongnegoro.jpeg" alt="Sego Tempong Negoro" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/seindonesia.webp" alt="SE Indonesia" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/skor.jpg" alt="Skor" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/specs.jpg" alt="Specs" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/tiket.png" alt="Tiket.com" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/ultr.jpg" alt="ULTR" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/sponsor/vivin.webp" alt="Vivin" width={40} height={40} className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
           </div>
         </div>
 
