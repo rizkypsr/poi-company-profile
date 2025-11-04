@@ -249,54 +249,54 @@ export default function Home() {
           {/* Infinite Scroll Container */}
           <div className="scroller" data-speed="slow">
             <div className="scroller__inner flex gap-8 py-4">
-              <Image src="/sponsor/adira.png" alt="Adira" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/allplay.png" alt="Allplay" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/bi.jpg" alt="Bank Indonesia" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/Bolalob.webp" alt="Bolalob" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/bpjs.svg.png" alt="BPJS" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/brawijayahospital.png" alt="Brawijaya Hospital" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/cheers.jpeg" alt="Cheers" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/citilink.png" alt="Citilink" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/galerifutsal.png" alt="Galeri Futsal" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/garistemu_cover.jpeg" alt="Garis Temu" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/garudatv.png" alt="Garuda TV" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/gelora.jpeg" alt="Gelora" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/globalradio.svg.png" alt="Global Radio" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/hmns.png" alt="HMNS" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/indihome.webp" alt="IndiHome" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/inews.svg" alt="iNews" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/infipopblue.svg" alt="Infipop Blue" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/infomedia.png" alt="Infomedia" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/jbfc.jpeg" alt="JBFC" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/jetbretmedia.png" alt="Jetbret Media" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/jne.png" alt="JNE" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/madiriutama.png" alt="Madiri Utama" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/mandiri.png" alt="Mandiri" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/max.jpg" alt="Max" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/mills.png" alt="Mills" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/mnc.png" alt="MNC" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/molten.jpeg" alt="Molten" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/mustang.png" alt="Mustang" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/mytelkomsel.png" alt="MyTelkomsel" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/nodge.png" alt="Nodge" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/noice.webp" alt="Noice" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/pala.jpeg" alt="Pala" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/pelindo.png" alt="Pelindo" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/pertamina.png" alt="Pertamina" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/pertamina_lubricants.png" alt="Pertamina Lubricants" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/physioprenenur.jpeg" alt="Physio Prenenur" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/pln.png" alt="PLN" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/pocari.png" alt="Pocari" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/pupuk.webp" alt="Pupuk Indonesia" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/republika.png" alt="Republika" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/salingjaga.png" alt="Saling Jaga" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/segotempongnegoro.jpeg" alt="Sego Tempong Negoro" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/seindonesia.webp" alt="SE Indonesia" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/skor.jpg" alt="Skor" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/specs.jpg" alt="Specs" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/tiket.png" alt="Tiket" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/ultr.jpg" alt="ULTR" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
-              <Image src="/sponsor/vivin.webp" alt="Vivin" width={48} height={48} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/adira.png" alt="Adira" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/allplay.png" alt="Allplay" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/bi.jpg" alt="Bank Indonesia" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/Bolalob.webp" alt="Bolalob" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/bpjs.svg.png" alt="BPJS" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/brawijayahospital.png" alt="Brawijaya Hospital" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/cheers.jpeg" alt="Cheers" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/citilink.png" alt="Citilink" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/galerifutsal.png" alt="Galeri Futsal" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/garistemu_cover.jpeg" alt="Garis Temu" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/garudatv.png" alt="Garuda TV" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/gelora.jpeg" alt="Gelora" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/globalradio.svg.png" alt="Global Radio" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/hmns.png" alt="HMNS" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/indihome.webp" alt="IndiHome" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/inews.svg" alt="iNews" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/infipopblue.svg" alt="Infipop Blue" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/infomedia.png" alt="Infomedia" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/jbfc.jpeg" alt="JBFC" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/jetbretmedia.png" alt="Jetbret Media" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/jne.png" alt="JNE" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/madiriutama.png" alt="Madiri Utama" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/mandiri.png" alt="Mandiri" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/max.jpg" alt="Max" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/mills.png" alt="Mills" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/mnc.png" alt="MNC" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/molten.jpeg" alt="Molten" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/mustang.png" alt="Mustang" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/mytelkomsel.png" alt="MyTelkomsel" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/nodge.png" alt="Nodge" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/noice.webp" alt="Noice" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/pala.jpeg" alt="Pala" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/pelindo.png" alt="Pelindo" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/pertamina.png" alt="Pertamina" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/pertamina_lubricants.png" alt="Pertamina Lubricants" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/physioprenenur.jpeg" alt="Physio Prenenur" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/pln.png" alt="PLN" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/pocari.png" alt="Pocari" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/pupuk.webp" alt="Pupuk Indonesia" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/republika.png" alt="Republika" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/salingjaga.png" alt="Saling Jaga" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/segotempongnegoro.jpeg" alt="Sego Tempong Negoro" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/seindonesia.webp" alt="SE Indonesia" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/skor.jpg" alt="Skor" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/specs.jpg" alt="Specs" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/tiket.png" alt="Tiket" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/ultr.jpg" alt="ULTR" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
+              <Image src="/sponsor/vivin.webp" alt="Vivin" width={48} height={48} quality={100} className="h-12 w-auto object-contain hover:scale-110 transition-all duration-300" />
             </div>
           </div>
         </div>
